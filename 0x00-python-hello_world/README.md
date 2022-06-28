@@ -10,4 +10,7 @@
 * [5-print_string.py](https://github.com/Obelem/alx-higher_level_programming/blob/master/0x00-python-hello_world/5-print_string.py) Prints a string 3 times followed by its first 9 characters
 * [6-concat.py](https://github.com/Obelem/alx-higher_level_programming/blob/master/0x00-python-hello_world/6-concat.py) Prints concatenated strings
 * [7-edges.py](https://github.com/Obelem/alx-higher_level_programming/blob/master/0x00-python-hello_world/7-edges.py) Prints first 3 letters, last 2 letters and a string without its first and last letters
-
+* [8-concat_edges.py](https://github.com/Obelem/alx-higher_level_programming/blob/master/0x00-python-hello_world/8-concat_edges.py) Creates a new sentence from words in original sentence
+* [9-easter_egg.py](https://github.com/Obelem/alx-higher_level_programming/blob/master/0x00-python-hello_world/9-easter_egg.py) Prints "The Zen of Python" by TimPeters followed by a new line
+* [10-check_cycle.c](https://github.com/Obelem/alx-higher_level_programming/blob/master/0x00-python-hello_world/10-check_cycle.c) Checks if a singly linked list has a cycle in it
+* [100-write.py](https://github.com/Obelem/alx-higher_level_programming/blob/master/0x00-python-hello_world/100-write.py) Prints exactly > and that piece of art is useful - Dora Korpar, 2015-10-19
