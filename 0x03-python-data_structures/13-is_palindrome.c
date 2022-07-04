@@ -25,10 +25,7 @@ int is_palindrome(listint_t **head)
 			current->next = NULL;
 
 			if (head_val != tail_val)
-			{	
-				free(temp);
 				return (0);
-			}
 
 			/* update head (N/B: temp is serving as the head) */
 			temp = temp->next;
@@ -43,6 +40,5 @@ int is_palindrome(listint_t **head)
 		else
 			current = current->next;
 	}
-	free(temp);
 	return (1);
 }
