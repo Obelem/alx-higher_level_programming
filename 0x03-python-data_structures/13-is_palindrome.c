@@ -12,7 +12,7 @@ int is_palindrome(listint_t **head)
 	int head_val, tail_val;
 
 	/* empty linked list condition */
-	if (*head == NULL || (*head)->next == NULL)
+	if (*head == NULL || (*head)->next == NULL || !head)
 		return (1);
 
 	/* get head value for comparison */
@@ -24,7 +24,7 @@ int is_palindrome(listint_t **head)
 		{
 			/* assign val of tail for comparison */
 			tail_val = (current->next)->n;
-			/* reset tail to current */
+			/* update tail to current */
 			current->next = NULL;
 
 			if (head_val != tail_val)
