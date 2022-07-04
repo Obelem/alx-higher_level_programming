@@ -16,7 +16,6 @@ int is_palindrome(listint_t **head)
 		return (1);
 	/* get head value for comparison */
 	head_val = (*head)->n;
-
 	current = *head;
 	temp = *head;
 	while (current)
@@ -45,5 +44,7 @@ int is_palindrome(listint_t **head)
 		else
 			current = current->next;
 	}
+	free(temp);
+	free(current);
 	return (1);
 }
