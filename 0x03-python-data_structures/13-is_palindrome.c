@@ -25,13 +25,16 @@ int is_palindrome(listint_t **head)
 			current->next = NULL;
 
 			if (head_val != tail_val)
+			{	
+				free(temp);
 				return (0);
+			}
 
 			/* update head (N/B: temp is serving as the head) */
 			temp = temp->next;
 			/* is a palindrome if head is NULL */
 			if (!temp)
-				return (1);
+				break;
 
 			/* update head_val and current for traversing */
 			head_val = temp->n;
@@ -40,5 +43,6 @@ int is_palindrome(listint_t **head)
 		else
 			current = current->next;
 	}
-	return (0);
+	free(temp);
+	return (1);
 }
