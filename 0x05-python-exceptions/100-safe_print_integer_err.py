@@ -7,6 +7,5 @@ def safe_print_integer_err(value):
         print("{:d}".format(value))
         return True
     except ValueError:   
-        print("Exception: Unkwown format code 'd'\
- for object of type 'str'", file=sys.stderr)
+        print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
         return False
