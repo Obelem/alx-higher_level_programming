@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """defines and initializes a class -> Rectangle"""
 
+
 class Rectangle:
     """define a class Rectangle"""
     def __init__(self, width=0, height=0):
@@ -17,11 +18,6 @@ class Rectangle:
         """get current size of width"""
         return self.__height
 
-    @property
-    def height(self):
-        """get current size of height"""
-        return self.__height
-
     @width.setter
     def width(self, value):
         """set width size"""
@@ -30,6 +26,11 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
+
+    @property
+    def height(self):
+        """get current size of height"""
+        return self.__height
 
     @height.setter
     def height(self, value):
