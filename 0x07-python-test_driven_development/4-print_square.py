@@ -1,4 +1,4 @@
-#!/u print("#", end='\n' if col == size - 1 else "")isr/bin/python3
+#!/usr/bin/python3
 """prints a square"""
 
 
