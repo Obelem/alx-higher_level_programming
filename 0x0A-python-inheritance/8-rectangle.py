@@ -6,7 +6,7 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 class Rectangle(BaseGeometry):
     """
     validates width and height values
-    using integer_validator property inherited from 7-base_geometry
+    using integer_validator property inherited @ 7-base_geometry
     Args:
         width (int): rectangle width
         height (int): rectangle height
