@@ -7,6 +7,6 @@ def read_file(filename=""):
         -Makes use of the 'with' statement to simplify our
         write process
     """
-    with open(filename) as file:
+    with open(filename, encoding='utf-8') as file:
         print(file.read(), end="")
     file.close()
