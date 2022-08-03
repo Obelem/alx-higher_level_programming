@@ -1,17 +1,15 @@
 #!/usr/bin/python3
-""" Module for task 7 """
+"""adds arguments to python list"""
 import sys
-load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
-save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 
-FILENAME = "add_item.json"
-args = sys.argv
-args.pop(0)
+
+save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
+
+filename = "add_item.json"
 try:
-    items = load_from_json_file(FILENAME)
-except FileNotFoundError as e:
-    with open(FILENAME, "a") as f:
-        f.write('[]\n')
-    items = load_from_json_file(FILENAME)
-items.extend(args)
-save_to_json_file(items, FILENAME)
+    items = load_from_json_file(filename)
+except FileNotFoundError:
+    items =[]
+items.extend(sys.argv[1:])
+save_to_json_file(items, filename)
