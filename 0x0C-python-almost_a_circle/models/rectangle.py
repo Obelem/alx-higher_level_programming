@@ -95,7 +95,7 @@ class Rectangle(Base):
         return str1 + str2
 
     def update(self, *args, **kwargs):
-        if args != None and len(args) != 0:
+        if args is not None and len(args) is not 0:
             list_atr = ['id', 'width', 'height', 'x', 'y']
             for i in range(len(args)):
                 setattr(self, list_atr[i], args[i])
@@ -105,4 +105,10 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """returns dict representation of Rectangle"""
-        return vars(self)
+        attr = ["x", "y", "id", 'height', 'width']
+        rect_dict = {}
+
+        for key in attr:
+            rect_dict[key] = getattr(self, key)
+
+        return rect_dict
