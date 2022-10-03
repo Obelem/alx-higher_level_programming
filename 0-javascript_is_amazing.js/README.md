@@ -1,0 +1,1 @@
+# Javascript is amazing
