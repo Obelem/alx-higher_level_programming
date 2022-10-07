@@ -9,7 +9,7 @@ import MySQLdb
 
 if __name__ == "__main__":
     con = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
-    cur = conn.cursor()
+    cur = con.cursor()
     cur.execute("SELECT * FROM states WHERE name = '{:s}' ORDER BY \
         id ASC".format(sys.argv[4]))
-    [print(state) for state in c.fetchall()]
+    [print(state) for state in cur.fetchall()]
