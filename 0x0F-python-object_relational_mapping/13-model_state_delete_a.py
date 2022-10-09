@@ -15,5 +15,5 @@ if __name__ == "__main__":
     session = session_maker()
 
     states = session.query(State)
-    [session.delete(state) for state in states if 'a' in state.name]
+    [session.delete(state) for state in states if "a" in state.name]
     session.commit()
