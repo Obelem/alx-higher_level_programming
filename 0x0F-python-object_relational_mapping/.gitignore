@@ -2,3 +2,4 @@
 *.json
 6-model_state.py
 *.pyc
+__pycache__
