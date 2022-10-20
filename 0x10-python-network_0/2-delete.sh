@@ -1,3 +1,3 @@
 #!/bin/bash
 # deletes resource at location
-curl -X -s DELETE "$1"
+curl -s -X DELETE "$1"
