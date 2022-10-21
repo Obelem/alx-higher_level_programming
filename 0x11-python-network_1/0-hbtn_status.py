@@ -2,9 +2,9 @@
 # use urllib to fetch given url with formatted display
 
 if __name__ == '__main__':
-    from urllib.request import urlopen
+    import urllib.request
 
-    with urlopen('https://intranet.hbtn.io/status') as res:
+    with urllib.request.urlopen('https://intranet.hbtn.io/status') as res:
         content = res.read()
         print("Body response:")
         print("\t- type: {}".format(type(content)))
