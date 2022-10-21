@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""use urllib to fetch given url with formatted display"""
+"""A script that
+- fetches https://intranet.hbtn.io/status.
+- uses urlib package
+"""
 from urllib.request import urlopen
 
 if __name__ == '__main__':
