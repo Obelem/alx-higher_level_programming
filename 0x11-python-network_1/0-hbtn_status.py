@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 # use urllib to fetch given url with formatted display
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     from urllib.request import urlopen
 
     with urlopen('https://alx-intranet.hbtn.io/status') as res:
