@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ displays the value of the variable X-Request-Id in the response header """
 from sys import argv
 from requests import get
