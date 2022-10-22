@@ -10,7 +10,7 @@ if __name__ == '__main__':
     res = post(url, data={'q': letter})
 
     try:
-        res_json = res_dict.json()
+        res_json = res.json()
         if res_json == {}:
             print('No result')
         else:
