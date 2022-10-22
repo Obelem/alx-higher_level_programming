@@ -1,9 +1,13 @@
 #!/usr/bin/python3
 """  fetches https://alx-intranet.hbtn.io/status """
-from urllib.request import urlopen
 
 if __name__ == '__main__':
-    with urlopen('https://alx-intranet.hbtn.io/status') as res:
+    from urllib.request import urlopen
+    from urllib.request import Request
+
+    req = Request('https://alx-intranet.hbtn.io/status')
+
+    with urlopen(req) as res:
         content = res.read()
         print('Body reponse:')
         print('\t- type:', type(content))
