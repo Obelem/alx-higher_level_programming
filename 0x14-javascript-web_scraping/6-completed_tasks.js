@@ -1,7 +1,8 @@
 #!/usr/bin/node
 const request = require('request');
 const endpoint = process.argv[2];
-let [obj, testId] = [{}, 0];
+const obj = {};
+let testId = 0;
 
 request(endpoint, (err, res, body) => {
   if (err) throw err;
