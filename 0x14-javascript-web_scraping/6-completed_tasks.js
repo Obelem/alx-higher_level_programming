@@ -9,8 +9,8 @@ request(endpoint, (err, res, body) => {
 
   JSON.parse(body).forEach(todo => {
     if (todo.completed === true && testId === todo.userId) {
-      if (!obj[todo.userId]) obj[todo.userId] = 0;
-      obj[todo.userId] += 1;
+      if (obj[todo.userId] === undefined) obj[todo.userId] = 0;
+      obj[todo.userId]++;
     } else if (todo.completed) obj[todo.userId] = 1;
     testId = todo.userId;
   });
